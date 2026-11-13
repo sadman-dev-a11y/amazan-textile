@@ -1,0 +1,4 @@
+export const site = { name:'Amazan Textile', url:'https://sadman-dev-a11y.github.io/amazan-textile/', phone:'+8801304650093', displayPhone:'০১৩০৪-৬৫০০৯৩', office:'৯৫ ডি.আই.টি. রোড, মালিবাগ রেলগেট, ঢাকা-১২১৭ (সোহাগ এসি বাস কাউন্টারের বিপরীতে, ডাচ্-বাংলা ব্যাংকের ৩য় তলা)।', factory:'মাসদাইর কবরস্থান রোড, ফতুল্লা, নারায়ণগঞ্জ।', returns:'যেকোনো কারণে পণ্য ফেরত দেওয়া যাবে। সেক্ষেত্রে শুধু ডেলিভারি চার্জ প্রযোজ্য।' };
+export const categories=[{slug:'three-piece',name:'থ্রি পিস',caption:'আপনার পছন্দে, আপনার সাজে',image:'floral'},{slug:'two-piece',name:'টু পিস',caption:'প্রতিদিনের সাজে নতুন ছোঁয়া',image:'dresses'},{slug:'readymade-three-piece',name:'রেডিমেড থ্রি পিস',caption:'সহজেই সাজুন নিজের মতো',image:'clothing'}];
+export const nav=[{slug:'',name:'হোম'},{slug:'new-arrivals',name:'নতুন কালেকশন'},...categories.map(({slug,name})=>({slug,name})),{slug:'about',name:'আমাদের সম্পর্কে'}];
+export const asset=(path:string)=>`${import.meta.env.BASE_URL}${path}`;

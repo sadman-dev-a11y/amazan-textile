@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sadman-dev-a11y.github.io/amazan-textile/sitemap.xml
