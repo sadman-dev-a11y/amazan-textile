@@ -7,3 +7,21 @@
 /* Keep larger navigation and action labels comfortable at intermediate widths. */
 .hero-actions{flex-wrap:wrap}.header-inner nav{gap:20px}.footer-grid>div{min-width:0}.footer-bottom{gap:24px;flex-wrap:wrap}.mobile-menu nav a{font-size:18px}
 @media(max-width:760px){.hero-actions{gap:16px}.hero-actions .button{max-width:100%}.image-caption{letter-spacing:.5px}.category-title small{letter-spacing:.5px}.ribbon{flex-wrap:wrap}.inquiry{overflow-wrap:anywhere}}
+
+/* Mobile-safe order links and accessible touch targets. */
+.order-group{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0;max-width:100%}
+.order-fallback{display:inline-flex;align-items:center;gap:5px;font-size:14px;line-height:1.6;color:var(--wine);text-decoration:underline;text-underline-offset:3px;max-width:310px;min-height:44px}
+.hero-actions{align-items:flex-start}
+.contact-strip .order-fallback{color:#fff}
+.utilities a,.utilities button,.drawer .row>button,.inquiry .row>button,.lightbox>button{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.utilities .mobile-toggle{display:none}
+.thumbnails button{min-width:44px;min-height:44px}
+.category-tabs a{min-height:44px;display:inline-flex;align-items:center}
+@media(max-width:760px){
+ .utilities{gap:4px}.utilities .mobile-toggle{display:inline-flex}.utilities>a:nth-child(2){display:none}
+ .header-inner{gap:8px}.header-inner>.brand{min-width:0}.header-inner>.brand span{font-size:13px;letter-spacing:.5px}.header-inner>.brand small{font-size:12px}
+ .hero-actions{gap:16px}.hero-actions .order-group{flex:1 1 220px}.order-now{min-height:48px}.order-fallback{font-size:14px}
+ .mobile-menu{padding-bottom:max(25px,env(safe-area-inset-bottom));overflow-y:auto}.mobile-menu .row{gap:8px}
+ .mobile-menu .brand span{font-size:12px;letter-spacing:.3px}.mobile-menu .brand small{font-size:11px}
+}
+@media(max-width:380px){.header-inner .brand img{width:44px;height:44px}.header-inner>.brand span{font-size:12px}.header-inner>.brand small{font-size:11px}.header-inner>.brand{gap:6px}.header-inner{padding-left:3%;padding-right:3%}}
